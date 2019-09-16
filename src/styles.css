@@ -1,1 +1,99 @@
-/* You can add global styles to this file, and also import other style files */
+.form-group>input{
+    font-weight: bolder;
+}
+.form-group>label{
+    font-weight: lighter;
+}
+
+button[type="submit"]{
+    background-color: #67dfd4;
+    color: #fff;
+
+}
+.jumbotron{
+    background-color: #fff;
+    padding-top: 32px;
+}
+
+table tr:hover{
+    cursor: pointer;
+}
+
+input.ng-touched.ng-invalid{
+    border-color: #dc3545;
+}
+div.validation-error{
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+
+.navbar {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    background-color: #405061;
+    padding-bottom: 10px;
+    flex-direction: column;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+.nav-links{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.navbar-toggle {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+}
+
+.active {
+    display: block;
+}
+
+@media screen and (min-width: 140px) {
+    .navbar {
+        display: flex;
+        padding-bottom: 0;
+        height: 70px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+    .nav-links {
+        margin-left: 40px;
+    }
+
+    
+    .nav-links:hover {
+        color: rgba(255, 255, 255, 1);
+    }
+
+}
+

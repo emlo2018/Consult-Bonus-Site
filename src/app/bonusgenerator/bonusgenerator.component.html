@@ -1,0 +1,14 @@
+<div class="jumbotron">
+    <div style="text-align:center">
+        <h1>Bonus generator</h1>
+        <input type="number" id="nettoresult" placeholder="netto result" class="form-control" #netto>
+        <br>
+        <button type="submit" (click)='generate(netto.value)'>Generate</button>
+        <h4>The bonus for sharing is:{{resultNetto}}</h4><!--  5% off netto -->
+        <h5>All Consults</h5>
+        <button type="submit" (click)='loopConsults()'>List</button>
+        <!-- <ul>
+            <li *ngFor="let consult of consults">{{consult.name}} <span>{{consult.bonus/consults}}</span></li>
+        </ul> -->
+    </div>
+</div>
